@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do Timer_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+F:/intelFPGA_lite/20.1/Examples/Timer_down_count {F:/intelFPGA_lite/20.1/Examples/Timer_down_count/Timer_v.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:22 on Feb 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/intelFPGA_lite/20.1/Examples/Timer_down_count" F:/intelFPGA_lite/20.1/Examples/Timer_down_count/Timer_v.v 
+# -- Compiling module Timer_v
+# 
+# Top level modules:
+# 	Timer_v
+# End time: 16:40:22 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/intelFPGA_lite/20.1/Examples/Timer_down_count {F:/intelFPGA_lite/20.1/Examples/Timer_down_count/Timer_v_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:40:22 on Feb 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/intelFPGA_lite/20.1/Examples/Timer_down_count" F:/intelFPGA_lite/20.1/Examples/Timer_down_count/Timer_v_tb.v 
+# -- Compiling module Timer_v_tb
+# 
+# Top level modules:
+# 	Timer_v_tb
+# End time: 16:40:22 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Timer_v_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Timer_v_tb 
+# Start time: 16:40:22 on Feb 22,2022
+# Loading work.Timer_v_tb
+# Loading work.Timer_v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : F:/intelFPGA_lite/20.1/Examples/Timer_down_count/Timer_v_tb.v(44)
+#    Time: 1210 ns  Iteration: 0  Instance: /Timer_v_tb
+# Break in Module Timer_v_tb at F:/intelFPGA_lite/20.1/Examples/Timer_down_count/Timer_v_tb.v line 44
+# WARNING: No extended dataflow license exists
+# End time: 16:46:57 on Feb 22,2022, Elapsed time: 0:06:35
+# Errors: 0, Warnings: 0
